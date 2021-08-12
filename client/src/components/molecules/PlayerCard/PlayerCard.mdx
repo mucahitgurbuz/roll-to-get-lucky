@@ -1,0 +1,20 @@
+---
+name: PlayerCard
+route: /component/player-card
+menu: Components
+---
+
+import { Props } from 'docz'
+import PlayerCard from './PlayerCard'
+
+# PlayerCard
+
+Player card component displays players info like name, image and current score. It also have a button that player rolls.
+
+- Gets the infos from props and globalStore.
+- Visibility change according to isActive, isWinner state.
+- On roll button click, random number generated between 1 and 6 and added to total score of the player.
+
+## Props
+
+<Props of={PlayerCard} />

@@ -1,0 +1,67 @@
+---
+name: Responsive Styles
+---
+
+# Responsive Styles
+
+```
+We use the @media(min-width) media queries to ensure values are mobile-first.
+```
+
+## What it does
+
+This shortcut is an alternative to writing media queries out by hand. Given the following:
+
+```js
+<Box
+  backgroundColor={{
+    default: 'primary',
+    mobile: 'red',
+  }}
+  color="white"
+>
+  This is a box
+</Box>
+```
+
+It'll generate a CSS that looks like this
+
+```js
+
+.Box {
+  backgroundColor: 'red';
+}
+
+@media screen and (min-width: 40em) {
+  .Box {
+    backgroundColor: 'primary;
+  }
+}
+```
+
+The equivalent of this style if you passed it as an object.
+
+```
+// First, create an alias for breakpoints
+const breakpoints: {
+    mobile: 520,
+    tablet: 960,
+  };
+// aliases
+breakpoints.sm = breakpoints.mobile;
+breakpoints.md = breakpoints.tablet;
+```
+
+then
+
+```
+<Box
+  width={{
+    default: '50px',
+    'sm': '300px',
+    'md': '200px'
+  }}
+>
+  This is a box
+</Box>
+```

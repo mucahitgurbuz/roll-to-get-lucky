@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["jest"],
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "typeRoots": ["./src/types/", "./node_modules/@types/"]
+  },
+  "exclude": ["templates/*"],
+  "include": ["src", "setupTests.js"]
+}

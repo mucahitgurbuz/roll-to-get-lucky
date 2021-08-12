@@ -1,0 +1,32 @@
+---
+name: Button
+route: /component/button
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import Button from './Button'
+import { Provider, Flex } from 'bumbag'
+import theme from '../../../theme'
+import { FaArrowRight } from 'react-icons/fa'
+
+# Button
+
+A generic button for the need of all kind of styling. It have some default type, where it can be used right away.
+
+## Props
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Provider theme={theme}>
+  <Flex flexDirection="column" gap="12px">
+    <Button>Click me</Button>
+    <Button isGhost>Click me</Button>
+    <Button styleProps={{backgroundColor:'red'}}>Click me</Button>
+    <Button icon={<FaArrowRight />} iconPosition="right">Right</Button>
+    </Flex>
+  </Provider>
+</Playground>

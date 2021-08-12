@@ -1,0 +1,9 @@
+node_modules/
+build/
+dist/
+.cache/
+.idea/
+yarn-error.log
+package-lock.json
+.DS_Store
+.docz

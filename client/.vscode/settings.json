@@ -1,0 +1,25 @@
+{
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "conventionalCommits.scopes": [
+    "Developer Experience",
+    "Development Experience",
+    "Authentication",
+    "Dashboard",
+    "Menu",
+    "Register",
+    "Onboarding",
+    "Shipment List",
+    "Shipment Create",
+    "Shipment Detail",
+    "User Profile",
+    "Form",
+    "Datatable",
+    "Global State MGMT",
+    "Resource Request",
+    "Admin",
+    "Email",
+    "Excel"
+  ],
+  "conventionalCommits.emojiFormat": "emoji"
+}
